@@ -25,9 +25,8 @@
   --bg-hero--btn-cl: #188CE8;
   --btn-filter--bg-mode:#F5F4FA;
   --mai-cl-txt: #757575;
-
-
-
+  --border-bottom--head-cl: #ECECEC;
+  
 }
 
 /* Common styles */
@@ -123,7 +122,43 @@ p:last-child{
 }
 
 /* header*/
-.navigation-link{
+
+
+.header-container,
+.navigstion-list,
+.heder-contact
+{
+  display: flex;
+  align-items: center;
+}
+
+.heder-link{
+  margin-right: 93px;
+}
+
+.navigation-item{
+  margin-right: 50px;
+}
+
+.navigation-item:last-child{
+  margin: 0;
+}
+
+.heder-contact{
+  margin-left: auto;
+}
+
+.link-mail{
+  margin-right: 50px;
+}
+
+.portfolio-header,
+.header {
+  border-bottom: 1px solid var(--border-bottom--head-cl);
+}
+
+
+.navigstion-list.list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -147,6 +182,7 @@ p:last-child{
   font-size: 26px;
   line-height: 1.19;
   color: var(--web-cl);
+  letter-spacing: 0.03em;
 }
 
 .studio-primary{
@@ -154,6 +190,7 @@ p:last-child{
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .studio-secondary{
   font-family: var(--secondary-font);
@@ -161,6 +198,7 @@ p:last-child{
   font-size: 26px;
   line-height: 1.19;
   color: var(--studio-footer-cl);
+  letter-spacing: 0.03em;
 }
 
 /* секция герой*/
