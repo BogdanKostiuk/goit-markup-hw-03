@@ -24,6 +24,7 @@
   --current-cl: #2196F3;
   --bg-hero--btn-cl: #188CE8;
   --btn-filter--bg-mode:#F5F4FA;
+  --mai-cl-txt: #757575;
 
 
 
@@ -36,7 +37,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: #757575;
+color: var(--mai-cl-txt);
 }
 
 /* скрываем заголовок */
@@ -53,17 +54,67 @@ color: #757575;
   margin: -1px;
 }
 
-.list { list-style: none;}
+/*сброс маржинов у заголовков и абзаца*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin-top: 0;
+}
 
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child{
+  margin-bottom: 0;
+}
+
+
+/*сброс маржинов и падингов у списков + убрали стили (точки)*/
+.list { 
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  
+  list-style: none;
+}
+
+/*контейнер (выравнивание контента)*/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*отступы между секциями*/
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/*стилизация ссылок (убрал нижнее подчеркивание и сделал цвет текста черным)*/
 .link {
   text-decoration: none;
   color: var(--txt-link-cl);
 }
+
+/*при наведении на кнопку курсор меняется*/
 .btn{
   cursor: pointer;
 }
 
-.hero, .footer {
+/*фон в гиро и футере*/
+.hero, 
+.footer {
   background-color: var(--primary-bg--mode);
 }
 
@@ -79,7 +130,9 @@ color: #757575;
   letter-spacing: 0.02em;
   color: var(--title-cl); 
 }
-.link-mail, .link-tel{
+
+.link-mail, 
+.link-tel{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -87,7 +140,8 @@ color: #757575;
   color: var(--link-contact-cl);
 }
 
-.web-primary, .web-secondary{
+.web-primary, 
+.web-secondary{
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -144,7 +198,8 @@ background-color: var(--secondary-bg--mode);
 }
 
 
-.services-title, .team-title{
+.services-title, 
+.team-title{
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -203,7 +258,8 @@ background-color: var(--secondary-bg--mode);
    color: var(--studio-footer-cl);
 }
 
-.footer-mail, .footer-tel{
+.footer-mail, 
+.footer-tel{
   
    color: var(--foter-mail-cl);
 }
