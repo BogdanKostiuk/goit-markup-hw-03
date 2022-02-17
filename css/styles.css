@@ -134,10 +134,12 @@ p:last-child{
 
 .heder-link{
   margin-right: 93px;
+  
 }
 
 .navigation-item{
   margin-right: 50px;
+  
 }
 
 .navigation-item:last-child{
@@ -155,6 +157,9 @@ p:last-child{
 .portfolio-header,
 .header {
   border-bottom: 1px solid var(--border-bottom--head-cl);
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -202,6 +207,11 @@ p:last-child{
 }
 
 /* секция герой*/
+
+.hero{
+  height: 600px;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -209,18 +219,42 @@ p:last-child{
   color: var(--hero-cl);
   text-align: center;
   text-transform: uppercase;
+
+  width: 696px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
 }
 .hero-btn{
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   background-color: var(--target-cl);
   color: var(--hero-cl);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  
+
   border-style: none;
   box-shadow: 0px 4px 4px #d9d9d9;
   border-radius: 4px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 10px 32px;
+
+  min-width: 200px;
+  min-height: 50px;
+  
   }
+  
 
 /* секция особенности*/
 .dignity-headline {
