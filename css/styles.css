@@ -424,15 +424,23 @@ background-color: var(--secondary-bg--mode);
   font-style: normal;
 }
 
+
 .fotter-list{
   font-style: normal;
-
-  display: flex;
 }
 
 .footer-link{
-  margin-top: 60px;
+  display: inline-block;
+  margin-top: 55px;
   margin-bottom: 20px;
+}
+
+.footer-item:not(:last-child){
+  margin-bottom: 9px;
+}
+
+.footer-item:last-child{
+  padding-bottom: 55px;
 }
 
 .footer-location{
