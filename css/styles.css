@@ -26,6 +26,7 @@
   --btn-filter--bg-mode:#F5F4FA;
   --mai-cl-txt: #757575;
   --border-bottom--head-cl: #ECECEC;
+  --bg-cl-card-team:#ffffff;
   
 }
 
@@ -134,7 +135,8 @@ p:last-child{
 
 .heder-link{
   margin-right: 93px;
-  
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .navigation-item{
@@ -143,7 +145,7 @@ p:last-child{
 }
 
 .navigation-item:last-child{
-  margin: 0;
+  margin: 0px;
 }
 
 .heder-contact{
@@ -157,10 +159,10 @@ p:last-child{
 .portfolio-header,
 .header {
   border-bottom: 1px solid var(--border-bottom--head-cl);
-  height: 80px;
   display: flex;
   align-items: center;
 }
+
 
 
 .navigstion-list.list {
@@ -169,6 +171,9 @@ p:last-child{
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-cl); 
+
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 
 .link-mail, 
@@ -178,6 +183,9 @@ p:last-child{
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--link-contact-cl);
+
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 
 .web-primary, 
@@ -208,8 +216,10 @@ p:last-child{
 
 /* секция герой*/
 
-.hero{
-  height: 600px;
+
+.position{
+  margin-top: 106px;
+  margin-bottom: 106px;
 }
 
 .hero-title {
@@ -220,11 +230,15 @@ p:last-child{
   text-align: center;
   text-transform: uppercase;
 
-  width: 696px;
-  height: 120px;
+  max-width: 696px;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  
 
 }
 .hero-btn{
@@ -247,11 +261,10 @@ p:last-child{
 
   margin-left: auto;
   margin-right: auto;
+  
 
   padding: 10px 32px;
 
-  min-width: 200px;
-  min-height: 50px;
   
   }
   
@@ -263,6 +276,39 @@ p:last-child{
   color: var(--title-cl);
   text-transform: uppercase;
 }
+
+.dignity-list{
+  display: flex;
+}
+
+.services-picture{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.dignity-item{
+  
+  flex-basis: calc(100%/4);
+}
+
+.dignity-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.dignity-text{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+
+.dignity-headline{
+  margin-bottom: 10px;
+}
+
+
 
 /*секция занятия+команда*/
 .team{
@@ -276,6 +322,33 @@ background-color: var(--secondary-bg--mode);
   line-height: 1.17;
   text-align: center;
   color: var(--title-cl);
+
+  margin-bottom: 50px;
+}
+
+.secondary-section{
+  padding-bottom: 94px;
+}
+
+
+.services-list{
+  display: flex;
+  border-style: none;
+  
+}
+
+.services-item:not(:last-child){
+  margin-right: 30px;
+}
+
+
+
+.team-avatar{
+  padding-bottom: 30px;
+
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team-headline {
@@ -283,11 +356,37 @@ background-color: var(--secondary-bg--mode);
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-cl);
+
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 10px;
+  margin: 0px;
 }
 
 .team-position {
   font-size: 16px;
   line-height: 1.19;
+
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.team-list{
+  display: flex;
+}
+
+
+
+.team-item{
+  background: var(--bg-cl-card-team);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child){
+   margin-right: 30px;
 }
 
 /*секция портфолио*/
@@ -319,13 +418,23 @@ background-color: var(--secondary-bg--mode);
 }
 
 /*footer*/
+
+
 .footer-contact{
   font-style: normal;
 }
 
 .fotter-list{
   font-style: normal;
+
+  display: flex;
 }
+
+.footer-link{
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
 .footer-location{
    color: var(--studio-footer-cl);
 }
