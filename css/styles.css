@@ -340,7 +340,7 @@ background-color: var(--secondary-bg--mode);
 
 
 .team-avatar{
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   display: block;
   max-width: 100%;
@@ -356,8 +356,7 @@ background-color: var(--secondary-bg--mode);
   display: flex;
   justify-content: center;
 
-  padding-bottom: 10px;
-  margin: 0px;
+  margin-bottom: 10px;
 }
 
 .team-position {
