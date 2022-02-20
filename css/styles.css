@@ -26,6 +26,7 @@
   --btn-filter--bg-mode:#F5F4FA;
   --mai-cl-txt: #757575;
   --border-bottom--head-cl: #ECECEC;
+  --border-project--portfolio-cl: #EEEEEE;
   --bg-cl-card-team:#ffffff;
   
 }
@@ -148,18 +149,22 @@ p:last-child{
   margin-left: auto;
 }
 
-.link-mail{
+.conact-item:not(:last-child){
   margin-right: 50px;
 }
+
 
 .portfolio-header,
 .header {
   border-bottom: 1px solid var(--border-bottom--head-cl);
-  display: flex;
-  align-items: center;
 }
 
 
+.navigation-link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .navigstion-list.list {
   font-weight: 500;
@@ -167,9 +172,6 @@ p:last-child{
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-cl); 
-
-  padding-top: 32px;
-  padding-bottom: 31px;
 }
 
 .link-mail, 
@@ -214,8 +216,8 @@ p:last-child{
 
 
 .position{
-  margin-top: 106px;
-  margin-bottom: 106px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -340,11 +342,14 @@ background-color: var(--secondary-bg--mode);
 
 
 .team-avatar{
-  margin-bottom: 30px;
-
-  display: block;
+   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.team-retreat{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-headline {
@@ -365,13 +370,11 @@ background-color: var(--secondary-bg--mode);
 
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
 }
 
 .team-list{
   display: flex;
 }
-
 
 
 .team-item{
@@ -404,7 +407,7 @@ background-color: var(--secondary-bg--mode);
 
 .projects-filter{
   display: flex;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -421,9 +424,8 @@ background-color: var(--secondary-bg--mode);
   margin-bottom: 30px;
 }
 
+
 .projects-picture{
-  margin-bottom: 20px;
-  
   display: block;
   max-width: 100%;
   height: auto;
@@ -433,9 +435,13 @@ background-color: var(--secondary-bg--mode);
 .projects-list{
   display: flex;
   flex-wrap: wrap;
-
 }
 
+.project-retreat{
+padding: 20px 24px;
+border: 1px solid var(--border-project--portfolio-cl);
+border-top: none;
+}
 
 .projects-headline{
   font-size: 18px;
@@ -443,7 +449,6 @@ background-color: var(--secondary-bg--mode);
   letter-spacing: 0.06em;
   color: var(--title-cl);
 
-  padding-left: 24px;
   margin-bottom: 4px;
 }
 
@@ -451,14 +456,14 @@ background-color: var(--secondary-bg--mode);
   font-size: 16px;
   line-height: 1.88;
   color: var(--link-contact-cl);
-
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
 
 /*footer*/
 
-
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-contact{
   font-style: normal;
 }
@@ -470,7 +475,6 @@ background-color: var(--secondary-bg--mode);
 
 .footer-link{
   display: inline-block;
-  margin-top: 55px;
   margin-bottom: 20px;
 }
 
@@ -478,9 +482,7 @@ background-color: var(--secondary-bg--mode);
   margin-bottom: 9px;
 }
 
-.footer-item:last-child{
-  padding-bottom: 55px;
-}
+
 
 .footer-location{
    color: var(--studio-footer-cl);
